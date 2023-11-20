@@ -18,12 +18,12 @@ Route::delete('/users/{users}', [UserController::class, 'destroy']) -> name('use
 // Route::get('/', function () {
 //     return view('home');
 // });
-// Route::get('/login', function () {
-//     return view('login');
-// });
-// Route::get('/about', function () {
-//     return view('about');
-// });
-// Route::get('/cars', function () {
-//     return view('cars');
-// });
+Route::get('/login', function () {
+    return view('login');
+});
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/cars', function () {
+    return view('cars');
+});

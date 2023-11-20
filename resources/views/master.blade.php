@@ -12,6 +12,32 @@
     <title>.:=Laravel=:.</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Auto<strong>Shop</strong></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url('/')}}">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/users')}}">Usuários</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/cars')}}">Carros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/about')}}">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/login')}}">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </nav>
+
     <div class="container">
         @yield('content')
     </div>
