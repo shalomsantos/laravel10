@@ -1,4 +1,4 @@
-@extends('master')
+@extends('template-page')
 
 @section('content')
     <div id="carouselExampleCaptions" class="carousel slide">
